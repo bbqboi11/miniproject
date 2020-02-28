@@ -6,7 +6,6 @@ function setup() {
   createCanvas(400, 400);
   colorMode(HSB);
   mySound.play();
-  ballcolor[0] = random(10, 100);
   ballpositions = [random(20, height - 20), random(20, width - 20)]
   ballspeed = [random(-5, 5), random(-5, 5)]
   ballcolor = [random(10, 80)]
@@ -42,15 +41,15 @@ function draw() {
   }
 
   if (ballpositions[4] && ballpositions[5]) {
-    fill(132, 52, ballcolor[0]);
+    fill(132, 52, ballcolor[2]);
     ballAction(4, 5);
   }
   if (ballpositions[6] && ballpositions[7]) {
-    fill(132, 52, ballcolor[0]);
+    fill(132, 52, ballcolor[3]);
     ballAction(8, 9);
   }
   if (ballpositions[10] && ballpositions[11]) {
-    fill(132, 52, ballcolor[0]);
+    fill(132, 52, ballcolor[4]);
     ballAction(10, 11);
   }
 }
